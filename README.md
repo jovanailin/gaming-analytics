@@ -14,13 +14,13 @@ This project has been divided into two main parts: Data Engineering and Data Sci
 ## Part 1: Data Engineering
 
 ### Step 1: Data Generation
-Data was collected from various sources relevant to gaming analytics. These sources include Steam Store APIs. Scripts used for data generation are available in the `data_generation` folder.
+Data was collected from various sources relevant to gaming analytics. These sources include Steam Store APIs. Scripts used for data generation are available in the `data_preparation` folder.
 
 ### Step 2: Data Storage
-ElephantSQL, an instance of PostgreSQL, was used for data storage. The database schema and setup scripts can be found in the `data_storage` folder.
+ElephantSQL, an instance of PostgreSQL, was used for data storage. The database schema and setup scripts can be found in the `data_preparation` folder.
 
 ### Step 3: Data Ingestion
-Data was ingested using Python scripts, which can be found in the `data_ingestion` folder. These scripts use libraries like `requests` for API interactions, `pandas` for data manipulation, and `psycopg2` to interact with ElephantSQL.
+Data was ingested using Python scripts, which can be found in the `data_preparation` folder. These scripts use libraries like `requests` for API interactions, `pandas` for data manipulation, and `psycopg2` to interact with ElephantSQL.
 
 ### Step 4: Data Transformation
 The ingested data was transformed for analysis using Python scripts available in the `data_transformation` folder. This involved cleaning the data, integrating data from different sources, and transforming data into a suitable format for analysis.
@@ -33,6 +33,3 @@ Instructions on how to replicate this project are available in the `instructions
 
 ## Contributing
 While this project is primarily for my own learning and portfolio, suggestions and improvements are welcome. Please open an issue to discuss or make a pull request.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
